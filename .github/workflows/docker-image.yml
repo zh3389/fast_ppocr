@@ -41,13 +41,13 @@ jobs:
           # Docker Registry Url, eg: docker.io
           registry_url: docker.io
           # Docker Image Repository Name, eg: username/demo-app
-          repository_name: mrzhang3389/fastppocr:latest
+          repository_name: mrzhang3389/fastppocr
           # Docker Login UserName, from: https://hub.docker.com/
           user_name: ${{ secrets.DOCKERHUB_USERNAME }}
           # Docker Login Access Token, from: https://hub.docker.com/
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           # Image Build Version
-          image_version: 1
+          image_version: latest
           # Docker File Directory, Default Current Directory (.)
           docker_file: . # optional, default is .
                 
